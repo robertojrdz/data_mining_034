@@ -1,0 +1,97 @@
+================================================================================
+    STATISTICAL HYPOTHESIS TESTING - STEAM GAMES DATASET
+================================================================================
+
+Total games analyzed: 5420
+
+================================================================================
+    AVERAGE PLAYTIME BY PRICE CATEGORY
+================================================================================
+
+Hypothesis: Different price categories have different average playtimes
+
+Free: n=1036, mean=1141.06, std=8084.91
+Low ($0-10): n=2897, mean=297.65, std=1021.49
+Medium ($10-30): n=1338, mean=710.35, std=1482.77
+High ($30+): n=149, mean=1992.31, std=4280.32
+
+--- Normality Tests ---
+Free: W=0.1114, p-value=0.0000 (Not Normal)Low ($0-10): W=0.1763, p-value=0.0000 (Not Normal)Medium ($10-30): W=0.4478, p-value=0.0000 (Not Normal)High ($30+): W=0.3914, p-value=0.0000 (Not Normal)
+
+--- Homogeneity of Variance Test ---
+Levene's Test: W=19.9081, p-value=0.0000
+Equal variances: No
+
+--- Kruskal-Wallis Test  ---
+H-statistic: 453.0095
+P-value: 0.000000
+Result: SIGNIFICANT (p < 0.05) - Price categories have different playtimes
+
+================================================================================
+    POSITIVE RATINGS BY RATING QUALITY
+================================================================================
+
+Hypothesis: Different rating quality groups have different positive ratings counts
+
+Negative (<50%): n=631, mean=409.42, std=1319.24
+Mixed (50-75%): n=1726, mean=2312.71, std=16223.98
+Positive (75%+): n=3063, mean=7090.65, std=54725.77
+
+--- Normality Tests ---
+Negative (<50%): W=0.2762, p-value=0.0000 (Not Normal)
+Mixed (50-75%): W=0.0923, p-value=0.0000 (Not Normal)
+Positive (75%+): W=0.0694, p-value=0.0000 (Not Normal)
+
+--- Homogeneity of Variance Test ---
+Levene's Test: W=9.4161, p-value=0.0001
+Equal variances: No
+
+--- Kruskal-Wallis Test  ---
+H-statistic: 1337.7642
+P-value: 0.000000
+Result: SIGNIFICANT (p < 0.05) - Rating quality affects positive ratings
+
+================================================================================
+    PRICE COMPARISON - POSITIVE vs NEGATIVE RATINGS
+================================================================================
+
+Hypothesis: Games with excellent ratings have different prices than poor-rated games
+
+Positive (75%+): n=3063, mean=$8.71, std=$8.60
+Negative (<50%): n=631, mean=$4.30, std=$6.78
+
+--- Normality Tests ---
+Positive: W=0.8343, p-value=0.0000 (Not Normal)
+Negative: W=0.6129, p-value=0.0000 (Not Normal)
+
+--- Homogeneity of Variance Test ---
+Levene's Test: W=65.9753, p-value=0.0000
+Equal variances: No
+
+--- Mann-Whitney U Test  ---
+U-statistic: 1339052.0000
+P-value: 0.000000
+Result: SIGNIFICANT (p < 0.05) - Prices differ between rating qualities
+
+================================================================================
+    OWNERS BY PRICE CATEGORY
+================================================================================
+
+Hypothesis: Different price categories have different owner counts
+
+Free: n=1036, mean=1067446.91, std=5770023.24
+Low ($0-10): n=2897, mean=394088.71, std=1133921.71
+Medium ($10-30): n=1338, mean=725112.11, std=2349111.05
+High ($30+): n=149, mean=803523.49, std=1285893.51
+
+--- Kruskal-Wallis Test ---
+H-statistic: 175.4508
+P-value: 0.000000
+Result: SIGNIFICANT (p < 0.05) - Price categories have different owner counts
+
+================================================================================
+    NOTES
+================================================================================
+
+All tests performed with significance level α = 0.05
+Non-parametric tests were used when assumptions of normality or homogeneity of variance were violated.
