@@ -1,0 +1,25 @@
+================================================================================
+LINEAR REGRESSION MODEL RESULTS - STEAM GAMES DATASET
+================================================================================
+
+Total games analyzed 5420 games
+Train/Test split: 80% / 20%
+
+================================================================================
+    PREDICTING PRICE
+================================================================================
+Features: positive_ratings, negative_ratings, average_playtime, owners_numeric
+
+Performance Metrics:
+  R² Score (Training):   0.0150
+  R² Score (Testing):    -0.1511
+  RMSE:                  $8.87
+  MAE:                   $6.07
+
+Feature Coefficients:
+  positive_ratings    :    -1.7104
+  negative_ratings    :     2.4459
+  average_playtime    :     0.3294
+  owners_numeric      :    -0.3183
+  Intercept           :     7.6036
+
