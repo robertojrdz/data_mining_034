@@ -1,0 +1,31 @@
+================================================================================
+    K-NEAREST NEIGHBORS CLASSIFICATION RESULTS
+================================================================================
+
+Dataset size: 5420 games
+Train/Test split: 80% / 20%
+K-value range tested: 1-30
+
+================================================================================
+    POPULARITY CLASSIFICATION (Low/Medium/High)
+================================================================================
+Features: positive_ratio, average_playtime, price, owners_numeric
+Optimal k: 6
+
+Performance Metrics:
+  Accuracy:  0.6411
+  Precision: 0.6307
+  Recall:    0.6411
+  F1-Score:  0.6311
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    High_Pop       0.72      0.76      0.74       361
+     Low_Pop       0.64      0.76      0.69       361
+  Medium_Pop       0.53      0.40      0.46       362
+
+    accuracy                           0.64      1084
+   macro avg       0.63      0.64      0.63      1084
+weighted avg       0.63      0.64      0.63      1084
+
