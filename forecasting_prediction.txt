@@ -1,0 +1,135 @@
+================================================================================
+TIME SERIES PREDICTION - STEAM GAMES DATASET
+================================================================================
+
+Dataset size: 5420 games
+Date range: 1997-06-30 00:00:00 to 2019-04-25 00:00:00
+
+================================================================================
+MODEL 1: PREDICTING NUMBER OF GAMES RELEASED PER YEAR
+================================================================================
+
+Historical data: 23 years
+
+Yearly Game Releases:
+===========================
+  1997: 1 games
+  1998: 1 games
+  1999: 2 games
+  2000: 2 games
+  2001: 4 games
+  2002: 1 games
+  2003: 3 games
+  2004: 6 games
+  2005: 5 games
+  2006: 38 games
+  2007: 82 games
+  2008: 96 games
+  2009: 176 games
+  2010: 159 games
+  2011: 191 games
+  2012: 263 games
+  2013: 347 games
+  2014: 736 games
+  2015: 826 games
+  2016: 1102 games
+  2017: 818 games
+  2018: 472 games
+  2019: 89 games
+
+========================================
+MODEL PERFORMANCE
+========================================
+Training years: 1997 - 2017
+Testing years:  2018 - 2019
+
+R² Score: -6.2848
+RMSE:     516.87 games
+MAE:      470.44 games
+
+========================================
+FUTURE PREDICTIONS
+========================================
+  2020: 818 games (predicted)
+  2021: 863 games (predicted)
+  2022: 909 games (predicted)
+  2023: 954 games (predicted)
+  2024: 999 games (predicted)
+  2025: 1044 games (predicted)
+  2026: 1089 games (predicted)
+  2027: 1134 games (predicted)
+  2028: 1180 games (predicted)
+  2029: 1225 games (predicted)
+
+Model Equation: y = 45.18x + -90443.32
+Interpretation: Each year sees approximately 45.18 more games released
+
+================================================================================
+MODEL 2: PREDICTING AVERAGE GAME PRICE OVER TIME
+================================================================================
+
+Yearly Average Prices:
+--------------------------------------------------
+  1997: Mean=$5.99, Median=$5.99, Std=$nan
+  1998: Mean=$7.19, Median=$7.19, Std=$nan
+  1999: Mean=$3.99, Median=$3.99, Std=$0.00
+  2000: Mean=$5.59, Median=$5.59, Std=$2.26
+  2001: Mean=$2.00, Median=$2.00, Std=$2.30
+  2002: Mean=$7.99, Median=$7.99, Std=$nan
+  2003: Mean=$2.99, Median=$3.99, Std=$2.64
+  2004: Mean=$5.76, Median=$7.19, Std=$3.25
+  2005: Mean=$3.63, Median=$4.99, Std=$3.41
+  2006: Mean=$7.52, Median=$6.99, Std=$6.33
+  2007: Mean=$5.72, Median=$4.99, Std=$3.77
+  2008: Mean=$6.92, Median=$6.99, Std=$4.73
+  2009: Mean=$7.38, Median=$6.99, Std=$4.10
+  2010: Mean=$7.66, Median=$6.99, Std=$5.52
+  2011: Mean=$7.30, Median=$6.99, Std=$4.98
+  2012: Mean=$8.40, Median=$6.99, Std=$6.65
+  2013: Mean=$8.83, Median=$6.99, Std=$7.07
+  2014: Mean=$7.77, Median=$6.99, Std=$7.15
+  2015: Mean=$7.20, Median=$4.99, Std=$7.78
+  2016: Mean=$6.02, Median=$2.09, Std=$8.42
+  2017: Mean=$7.81, Median=$2.79, Std=$10.70
+  2018: Mean=$10.11, Median=$3.99, Std=$12.85
+  2019: Mean=$12.13, Median=$7.19, Std=$14.71
+
+--------------------------------------------------
+MODEL PERFORMANCE
+--------------------------------------------------
+R² Score: -8.3670
+RMSE:     $3.08
+MAE:      $2.94
+
+----------------------------------------
+FUTURE PREDICTIONS
+----------------------------------------
+  2020: $8.42 (predicted)
+  2021: $8.57 (predicted)
+  2022: $8.73 (predicted)
+  2023: $8.89 (predicted)
+  2024: $9.05 (predicted)
+  2025: $9.21 (predicted)
+  2026: $9.36 (predicted)
+  2027: $9.52 (predicted)
+  2028: $9.68 (predicted)
+  2029: $9.84 (predicted)
+
+Model Equation: y = 0.1579x + -310.46
+Interpretation: Average game price is increasing by $0.16 per year
+
+================================================================================
+SUMMARY OF FORECASTING PREDICTIONS
+================================================================================
+
+Model Performance Summary:
+  1. Games Released:     R² = -6.2848
+  2. Average Price:      R² = -8.3670
+
+Key Insights:
+  - Number of games is increasing by ~45 games/year
+  - Average price is increasing by ~$0.16/year
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
